@@ -1,5 +1,5 @@
 # Configurations
-title:            Jekyll Gitbook
+title:            hummingbbird 
 longtitle:        Jekyll Gitbook
 author:           HE Tao
 email:            sighingnow@gmail.com
@@ -52,3 +52,12 @@ regenerate:       true
 plugins:
   - jekyll-feed
   - jemoji
+
+comment:
+  provider:	"disqus"
+  disqus:
+    shortname:	"hummingbbird"
+B
+B
+j
+i
