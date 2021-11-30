@@ -23,7 +23,7 @@ tipue_search:
   include:
     pages: true
   exclude:
-    files: 
+    files: [] 
 
 # markdown render engine.
 markdown:         kramdown
@@ -53,7 +53,7 @@ plugins:
   - jekyll-feed
   - jemoji
 
-comment: true
+comment:
   provider:	"disqus"
   disqus:
     shortname:	"hummingbbird"
