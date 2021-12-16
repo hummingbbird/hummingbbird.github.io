@@ -17,12 +17,12 @@ git config --global user.mail [깃허브와 연결된 내 메일 주소]
 ```
 
 ##### +)깃 간단한 명령어
-1.git add : 수정한 코드 선택
-2.git commit -m "comment" : 커밋하기
-3.git push : 로컬 저장소에서 원격 저장소 업데이트
-4.git pull : 원격 저장소에서 로컬 저장소 업데이트
-**->앞으로 대부분의 작업 후 1,2,3 세가지의 과정을 필수적으로 거쳐야 합니다.**
-
+1.git add : 수정한 코드 선택  
+2.git commit -m "comment" : 커밋하기  
+3.git push : 로컬 저장소에서 원격 저장소 업데이트  
+4.git pull : 원격 저장소에서 로컬 저장소 업데이트  
+**->앞으로 대부분의 작업 후 1,2,3 세가지의 과정을 필수적으로 거쳐야 합니다.**  
+  
 ## 2.깃허브 페이지 만들기
 ---
 1.깃허브에서 [username].github.io 라는 이름을 가진 repository를 생성합니다.  
@@ -32,7 +32,7 @@ git config --global user.mail [깃허브와 연결된 내 메일 주소]
 5.2 - 1, 2번의 과정을 거칩니다.  
 
 +) 2 - 3번 과정을 거치기 전 필요한 token을 가져와야합니다.  
-**나의 github 들어가서 Setting->Developer settings->Personal access tokens->Generate new token 을 진행해줍니다.
+**나의 github 들어가서 Setting->Developer settings->Personal access tokens->Generate new token 을 진행해줍니다.  
 생성이 완료된 토큰을 복사하여 비밀번호처럼 사용합니다.(단, 복사한 토큰은 잃어버리지 않게 잘 복사해두세요! 그렇지 않으면 다시 새 토큰을 만들어야 합니다.)**
 
 6.git push 과정에서 비밀번호 칸에 복사한 토큰을 입력해주면 성공입니다.  
@@ -64,19 +64,19 @@ categories: jekyll update
 
 ## 5.테마 설치하기
 ---
-1.[여기](http://jekyllthemes.org/) 를 눌러 들어간 후 원하는 테마를 골라줍니다.
-2.선택한 테마를 git clone 해서 로컬에 받아온 후, _posts 파일을 제외하고 모든 테마를 덮어씌워줍니다.
-3.변경된 파일들을 git에 반영해주면 테마가 잘 적용되었음을 확인할 수 있습니다.
+1.[여기](http://jekyllthemes.org/) 를 눌러 들어간 후 원하는 테마를 골라줍니다.  
+2.선택한 테마를 git clone 해서 로컬에 받아온 후, _posts 파일을 제외하고 모든 테마를 덮어씌워줍니다.  
+3.변경된 파일들을 git에 반영해주면 테마가 잘 적용되었음을 확인할 수 있습니다.  
 
 ## 6.댓글 기능 구현하기
 ---
-1.[disqus](https://disqus.com/) 사이트에 들어가 회원가입을 진행합니다.
-2.I want to install Disqus on my site'를 선택합니다.
-3.사이트 정보를 입력합니다.(이 때, Website Name을 잘 기억해둡니다.)
-4.지킬 플랫폼을 선택한 후, Configure를 눌러 다음을 진행합니다.
-5.Website URL에 이름과 url을 잘 입력한 후 Next 버튼을 누릅니다.
-6.Comment 정책을 선택한 후 Complete Setup을 눌러 설정을 마무리해줍니다.
-7._config.yml 파일의 #Custom vars 에 다음과 같은 key-value를 추가해줍니다.
+1.[disqus](https://disqus.com/) 사이트에 들어가 회원가입을 진행합니다.  
+2.I want to install Disqus on my site'를 선택합니다.  
+3.사이트 정보를 입력합니다.(이 때, Website Name을 잘 기억해둡니다.)  
+4.지킬 플랫폼을 선택한 후, Configure를 눌러 다음을 진행합니다.  
+5.Website URL에 이름과 url을 잘 입력한 후 Next 버튼을 누릅니다.  
+6.Comment 정책을 선택한 후 Complete Setup을 눌러 설정을 마무리해줍니다.  
+7._config.yml 파일의 #Custom vars 에 다음과 같은 key-value를 추가해줍니다.  
 ```
 comment:
   provider:		"disqus"
@@ -85,8 +85,8 @@ comment:
 ```
 8.disqus 홈페이지에서 Universal Code를 복사한 후 페이지에 맞게 수정을 해줍니다. 위 아래에 각각{% if.page.comments &}  
 , {% endif %}를 입력해줍니다.
-9._layouts/post.html 파일에서 let PAGE_URL과 PAGE_IDENTIFIER 부분을 수정해줍니다.
-10.s.src에 아까 복사한 url을 입력해줍니다. 그리고 댓글을 허용하고 싶은 곳에 comments: true를 입력해주면 완성!(물론 당연히 2-1,2,3 과정을 거쳐야 합니다.)
+9._layouts/post.html 파일에서 let PAGE_URL과 PAGE_IDENTIFIER 부분을 수정해줍니다.  
+10.s.src에 아까 복사한 url을 입력해줍니다. 그리고 댓글을 허용하고 싶은 곳에 comments: true를 입력해주면 완성!(물론 당연히 2-1,2,3 과정을 거쳐야 합니다.)    
 
 ## 7.소감
 ---
@@ -94,7 +94,7 @@ comment:
 이번 수업을 통해 많이 접해보고 사용해보며 많이 익숙해질 수 있어서 좋았다. 또한 어려움을 겪을 때 구글링을 통해 많은  
 정보를 얻었다. 사소한 문제는 교수님께 여쭤보기 참 애매한 부분이라서 난감했는데 다양한 검색어를 검색함으로써 정보를   
 얻는 과정에서 희열도 느끼고 깨닫는 것이 많았다. 나 또한 앞으로 열심히 공부해서 블로그에 글을 올려 다른 사람들에게  
-좋은 정보를 편리하게 사용할 수 있도록 제공해보고 싶다는 생각이 들었다.
+좋은 정보를 편리하게 사용할 수 있도록 제공해보고 싶다는 생각이 들었다.  
 
 
 
