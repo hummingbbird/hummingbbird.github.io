@@ -25,42 +25,42 @@ git config --global user.mail [깃허브와 연결된 내 메일 주소]
 
 ## 2.깃허브 페이지 만들기
 ---
-1.깃허브에서 [username].github.io 라는 이름을 가진 repository를 생성합니다.
-2.생성된 repository의 url을 복사합니다.
-3.git clone [나의 깃허브 url] 하여 로컬 저장소의 repository와 연동합니다.
-4.'index.html'이라는 이름의 예시 파일을 작성합니다(blog_two문서 참조)
+1.깃허브에서 [username].github.io 라는 이름을 가진 repository를 생성합니다.  
+2.생성된 repository의 url을 복사합니다.  
+3.git clone [나의 깃허브 url] 하여 로컬 저장소의 repository와 연동합니다.  
+4.'index.html'이라는 이름의 예시 파일을 작성합니다(blog_two문서 참조)  
 5.2 - 1, 2번의 과정을 거칩니다.  
 
-+) 2 - 3번 과정을 거치기 전 필요한 token을 가져와야합니다.
++) 2 - 3번 과정을 거치기 전 필요한 token을 가져와야합니다.  
 **나의 github 들어가서 Setting->Developer settings->Personal access tokens->Generate new token 을 진행해줍니다.
 생성이 완료된 토큰을 복사하여 비밀번호처럼 사용합니다.(단, 복사한 토큰은 잃어버리지 않게 잘 복사해두세요! 그렇지 않으면 다시 새 토큰을 만들어야 합니다.)**
 
-6.git push 과정에서 비밀번호 칸에 복사한 토큰을 입력해주면 성공입니다.
+6.git push 과정에서 비밀번호 칸에 복사한 토큰을 입력해주면 성공입니다.  
 7.github->Repository Settings > Pages 로 들어가 중간에 있는 주소로 접속해주면  
 내가 만든 예시 파일 대로 잘 작성이 된 것을 확인할 수 있습니다.
 
 ## 3.지킬 설치하기
 ---
-1.지킬을 설치하기 전 확인 작업을 거칩니다.
-[jekyll](https://jekyllrb-ko.github.io/docs/installation/ubuntu/) 을 눌러 들어간 후 설명을 따라서 잘 실행을 해줍니다.
-2.jekyll -v를 통해 지킬이 잘 설치되어 있는지 확인한 후, jekyll new .--force 를 통해 현재 디렉토리에 지킬을 설치해줍니다.
-3.실행 후 ls 명령어를 입력해보면 많은 파일이 생겼음을 알 수 있습니다.
-4.bundle exec jekyll serve 실행 후, localhost:4000에 접속해주어, 사이트가 잘 생성 되었음을 확인해줍니다.
+1.지킬을 설치하기 전 확인 작업을 거칩니다.  
+[jekyll](https://jekyllrb-ko.github.io/docs/installation/ubuntu/) 을 눌러 들어간 후 설명을 따라서 잘 실행을 해줍니다.  
+2.jekyll -v를 통해 지킬이 잘 설치되어 있는지 확인한 후, jekyll new .--force 를 통해 현재 디렉토리에 지킬을 설치해줍니다.  
+3.실행 후 ls 명령어를 입력해보면 많은 파일이 생겼음을 알 수 있습니다.  
+4.bundle exec jekyll serve 실행 후, localhost:4000에 접속해주어, 사이트가 잘 생성 되었음을 확인해줍니다.  
 
 ## 4.포스트 업로드하기
 ---
-1.YYYY-MM-DD-TITLE.md의 형태로 새로운 문서를 생성합니다.
-2.
+1.YYYY-MM-DD-TITLE.md의 형태로 새로운 문서를 생성합니다.  
+2.  
 = = =
 layout: post
 title: "MongoDB 정리"
 date: 2021-12-10 19:14:23 +0900
 categories: jekyll update
 = = =
-위와 같은 형식으로 문서를 시작합니다.
+위와 같은 형식으로 문서를 시작합니다.   
 
-3.markdown 형식을 통해 내용을 작성하고 1-1,2,3의 과정을 거칩니다.
-4.다시 3-4번 과정을 통해 잘 연동이 되었는지 확인해줍니다.
+3.markdown 형식을 통해 내용을 작성하고 1-1,2,3의 과정을 거칩니다.   
+4.다시 3-4번 과정을 통해 잘 연동이 되었는지 확인해줍니다.   
 
 ## 5.테마 설치하기
 ---
